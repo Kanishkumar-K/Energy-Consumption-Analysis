@@ -1,0 +1,106 @@
+Name,Phone,City,Weather,Appliance,Efficiency,Use Rate
+Jane Smith,9876543210,Los Angeles,Cloudy,Air Conditioner,3,8
+David Johnson,5551234567,Chicago,Rainy,Washing Machine,2,5
+Sarah Williams,7775551234,Houston,Sunny,Oven,4,9
+Michael Brown,2223334444,Phoenix,Hot,Television,5,7
+Emily Davis,4445556666,San Francisco,Foggy,Light Bulb,1,3
+Daniel Taylor,8889990000,Boston,Windy,Computer,3,6
+Olivia Anderson,1112223333,Dallas,Sunny,Microwave,2,4
+John Smith,555-1234,New York,Sunny,Refrigerator,4,10
+Emily Johnson,555-5678,Los Angeles,Cloudy,Air Conditioner,3,8
+Michael Williams,555-9012,Chicago,Rainy,Washing Machine,2,5
+Emma Brown,555-3456,Houston,Sunny,Oven,4,9
+Daniel Davis,555-7890,Phoenix,Hot,Television,5,7
+Olivia Taylor,555-2345,San Francisco,Foggy,Light Bulb,1,3
+Sophia Anderson,555-6789,Boston,Windy,Computer,3,6
+Aiden Martin,555-0123,Dallas,Sunny,Microwave,2,4
+John Smith,555-1234,New York,Sunny,Refrigerator,4,10
+Emily Johnson,555-5678,Los Angeles,Cloudy,Air Conditioner,3,8
+Michael Williams,555-9012,Chicago,Rainy,Washing Machine,2,5
+Emma Brown,555-3456,Houston,Sunny,Oven,4,9
+Daniel Davis,555-7890,Phoenix,Hot,Television,5,7
+Olivia Taylor,555-2345,San Francisco,Foggy,Light Bulb,1,3
+Sophia Anderson,555-6789,Boston,Windy,Computer,3,6
+Aiden Martin,555-0123,Dallas,Sunny,Microwave,2,4
+Sophie Wilson,555-7890,New York,Cloudy,Refrigerator,4,10
+Benjamin Thompson,555-2345,Los Angeles,Sunny,Air Conditioner,3,8
+John Smith,555-1234,New York,Sunny,Refrigerator,4,10
+Emily Johnson,555-5678,Los Angeles,Cloudy,Air Conditioner,3,8
+Michael Williams,555-9012,Chicago,Rainy,Washing Machine,2,5
+Emma Brown,555-3456,Houston,Sunny,Oven,4,9
+Daniel Davis,555-7890,Phoenix,Hot,Television,5,7
+Olivia Taylor,555-2345,San Francisco,Foggy,Light Bulb,1,3
+Sophia Anderson,555-6789,Boston,Windy,Computer,3,6
+Aiden Martin,555-0123,Dallas,Sunny,Microwave,2,4
+Sophie Wilson,555-7890,New York,Cloudy,Refrigerator,4,10
+Benjamin Thompson,555-2345,Los Angeles,Sunny,Air Conditioner,3,8
+Alice Davis,555-5678,Chicago,Rainy,Washing Machine,2,5
+James Johnson,555-9012,Houston,Sunny,Oven,4,9
+Liam Wilson,555-3456,Phoenix,Hot,Television,5,7
+Ava Taylor,555-6789,Austin,Windy,Blender,1,4
+Alexander Anderson,555-0123,San Francisco,Sunny,Microwave,4,10
+Ella Martin,555-7890,New York,Cloudy,Refrigerator,3,8
+William Thompson,555-2345,Los Angeles,Sunny,Air Conditioner,2,5
+Sophia Davis,555-5678,Chicago,Rainy,Washing Machine,4,9
+Michael Johnson,555-9012,Houston,Sunny,Oven,5,7
+Charlotte Wilson,555-3456,Phoenix,Hot,Television,1,3
+Noah Taylor,555-6789,Boston,Windy,Computer,4,6
+Mia Anderson,555-0123,Dallas,Sunny,Microwave,2,4
+Jennifer Adams,555-1234,New York,Sunny,Refrigerator,4,10
+David Anderson,555-5678,Los Angeles,Cloudy,Air Conditioner,3,8
+Sarah Bennett,555-9012,Chicago,Rainy,Washing Machine,2,5
+Matthew Campbell,555-3456,Houston,Snowy,Oven,4,9
+Jessica Carter,555-7890,Phoenix,Hot,Television,5,7
+Ryan Clark,555-2345,San Francisco,Foggy,Light Bulb,1,3
+Emily Collins,555-6789,Boston,Windy,Computer,3,6
+Nathan Cooper,555-0123,Dallas,Sunny,Microwave,2,4
+Victoria Davis,555-8901,Miami,Partly Cloudy,Dishwasher,4,8
+Oliver Evans,555-4567,Seattle,Rainy,Coffee Maker,3,5
+Sophia Foster,555-7890,Denver,Snowy,Toaster,2,3
+Daniel Garcia,555-2345,San Diego,Sunny,Fan,4,7
+Amelia Gonzalez,555-6789,Portland,Foggy,Heater,5,9
+Henry Gray,555-0123,Austin,Windy,Blender,1,4
+Isabella Green,555-7890,San Francisco,Sunny,Microwave,4,10
+Ethan Hall,555-3456,New York,Cloudy,Refrigerator,3,8
+Charlotte Harris,555-6789,Los Angeles,Sunny,Air Conditioner,2,5
+Michael Hill,555-9012,Chicago,Rainy,Washing Machine,4,9
+Sophia Hughes,555-2345,Houston,Sunny,Oven,5,7
+Emily Jackson,555-6789,Phoenix,Hot,Television,1,3
+Ava James,555-0123,Boston,Windy,Computer,4,6
+Logan Johnson,555-7890,Dallas,Sunny,Microwave,2,4
+Grace Jones,555-3456,Miami,Partly Cloudy,Dishwasher,4,8
+Daniel King,555-6789,Seattle,Rainy,Coffee Maker,3,5
+Sophia Lee,555-0123,Denver,Snowy,Toaster,2,3
+Jacob Lewis,555-7890,San Diego,Sunny,Fan,4,7
+Olivia Lopez,555-2345,Portland,Foggy,Heater,5,9
+Noah Martinez,555-6789,Austin,Windy,Blender,1,4
+Liam Miller,555-0123,San Francisco,Sunny,Microwave,4,10
+Sophia Adams,555-1234,New York,Sunny,Refrigerator,4,10
+Ethan Anderson,555-5678,Los Angeles,Cloudy,Air Conditioner,3,8
+Ava Bennett,555-9012,Chicago,Rainy,Washing Machine,2,5
+Noah Campbell,555-3456,Houston,Snowy,Oven,4,9
+Olivia Carter,555-7890,Phoenix,Hot,Television,5,7
+Liam Clark,555-2345,San Francisco,Foggy,Light Bulb,1,3
+Isabella Collins,555-6789,Boston,Windy,Computer,3,6
+Mia Cooper,555-0123,Dallas,Sunny,Microwave,2,4
+Charlotte Davis,555-8901,Miami,Partly Cloudy,Dishwasher,4,8
+Lucas Evans,555-4567,Seattle,Rainy,Coffee Maker,3,5
+Amelia Foster,555-7890,Denver,Snowy,Toaster,2,3
+Oliver Garcia,555-2345,San Diego,Sunny,Fan,4,7
+Sophia Gonzalez,555-6789,Portland,Foggy,Heater,5,9
+Aiden Gray,555-0123,Austin,Windy,Blender,1,4
+Emma Green,555-7890,San Francisco,Sunny,Microwave,4,10
+Jackson Hall,555-3456,New York,Cloudy,Refrigerator,3,8
+Ava Harris,555-6789,Los Angeles,Sunny,Air Conditioner,2,5
+Carter Hill,555-9012,Chicago,Rainy,Washing Machine,4,9
+Harper Hughes,555-2345,Houston,Sunny,Oven,5,7
+Ella Jackson,555-6789,Phoenix,Hot,Television,1,3
+Leo James,555-0123,Boston,Windy,Computer,4,6
+Mila Johnson,555-7890,Dallas,Sunny,Microwave,2,4
+Henry Jones,555-3456,Miami,Partly Cloudy,Dishwasher,4,8
+Alexander King,555-6789,Seattle,Rainy,Coffee Maker,3,5
+Luna Lee,555-0123,Denver,Snowy,Toaster,2,3
+Jack Lewis,555-7890,San Diego,Sunny,Fan,4,7
+Sophia Lopez,555-2345,Portland,Foggy,Heater,5,9
+Lucy Martinez,555-6789,Austin,Windy,Blender,1,4
+Logan Miller,555-0123,San Francisco,Sunny,Microwave,4,10

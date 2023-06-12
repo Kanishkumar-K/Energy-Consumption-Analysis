@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Consumption Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333333;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>   <h3 align="right"><a href="eca.html" style="color: #000000;">LOGOUT</a></h3> </div>
+    <h1 align="center" style="font-family: 'Times New Roman', Times, serif;">Energy Consumption Analysis</h1>
+    <form action="/predict" method="POST" onsubmit="return validateForm()">
+        <label for="appliance_type">Appliance Type:</label>
+        <select name="appliance_type" required>
+            <option value="">Select Appliance Type</option>
+            <option value="Refrigerator">Refrigerator</option>
+            <option value="Air Conditioner">Air Conditioner</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <!-- Add more appliance types here -->
+        </select>
+        <span id="appliance_error" class="error"></span><br><br>
+        
+        <label for="power_rating">Power Rating:</label>
+        <input type="number" name="power_rating" required>
+        <span id="power_error" class="error"></span><br><br>
+        
+        <label for="usage_pattern">Usage Pattern:</label>
+        <input type="number" name="usage_pattern" required>
+        <span id="usage_error" class="error"></span><br><br>
+        
+        <label for="energy_efficiency_rating">Energy Efficiency Rating:</label>
+        <select name="energy_efficiency_rating" required>
+            <option value="">Select Energy Efficiency Rating</option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+        </select>
+        <span id="energy_rating_error" class="error"></span><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            const applianceType = document.forms[0].elements["appliance_type"].value;
+            const powerRating = document.forms[0].elements["power_rating"].value;
+            const usagePattern = document.forms[0].elements["usage_pattern"].value;
+            const energyRating = document.forms[0].elements["energy_efficiency_rating"].value;
+            
+            let isValid = true;
+            
+            if (applianceType === "") {
+                document.getElementById("appliance_error").textContent = "Please select an appliance type.";
+                isValid = false;
+            } else {
+                document.getElementById("appliance_error").textContent = "";
+            }
+            
+            if (powerRating === "") {
+                document.getElementById("power_error").textContent = "Please enter the power rating.";
+                isValid = false;
+            } else {
+                document.getElementById("power_error").textContent = "";
+            }
+            
+            if (usagePattern === "") {
+                document.getElementById("usage_error").textContent = "Please enter the usage pattern.";
+                isValid = false;
+            } else {
+                document.getElementById("usage_error").textContent = "";
+            }
+            if (powerRating === "" || powerRating < 0) {
+                document.getElementById("power_error").textContent = "Please enter a valid power rating.";
+                isValid = false;
+            } else {
+                document.getElementById("power_error").textContent = "";
+            }
+            
+            if (usagePattern === "" || usagePattern < 0) {
+                document.getElementById("usage_error").textContent = "Please enter a valid usage pattern.";
+                isValid = false;
+            } else {
+                document.getElementById("usage_error").textContent = "";
+            }
+            
+            if (energyRating === "") {
+                document.getElementById("energy_rating_error").textContent = "Please select an energy efficiency rating.";
+                isValid = false;
+            } else {
+                document.getElementById("energy_rating_error").textContent = "";
+            }
+            
+            return isValid;
+        }
+    </script>
+</body>
+</html>

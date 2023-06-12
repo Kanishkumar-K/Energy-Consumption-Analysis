@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis Plots</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333333;
+            margin-top: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 1px solid #cccccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .text-area {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            border: 1px solid #cccccc;
+            padding: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div>   <h3 align="right"><a href="eca.html" style="color: #000000;">EXIT</a></h3> </div>
+    <div class="container">
+        <h1>Bivariate Analysis: Efficiency vs. Appliance</h1>
+        <img id="bivariate-img" src="bivariate.png" alt="Bivariate Analysis">
+        <textarea id="bivariate-text" class="text-area" readonly>The scatter plot above illustrates the relationship between "Efficiency" and "Appliance." Each data point represents a specific combination of efficiency and appliance.
+            The horizontal axis represents the efficiency values, while the vertical axis represents the appliance values.</textarea>
+        <button id="bivariate-button" class="button" onclick="toggleText('bivariate')">Toggle Text</button>
+    </div>
+
+    <div class="container">
+        <h1>Univariate Analysis: Appliance</h1>
+        <img id="univariate-img" src="univariate.png" alt="Univariate Analysis">
+        <textarea id="univariate-text" class="text-area" readonly>The histogram above represents the distribution of the "Appliance" variable. The x-axis displays the different categories or types of appliances, while the y-axis represents the frequency or count of each category.</textarea>
+        <button id="univariate-button" class="button" onclick="toggleText('univariate')">Toggle Text</button>
+    </div>
+
+    <div class="container">
+        <h1>Multivariate Analysis: Correlation Matrix</h1>
+        <img id="multivariate-img" src="multivariate.png" alt="Multivariate Analysis">
+        <textarea id="multivariate-text" class="text-area" readonly>The correlation matrix heatmap provides visual representation of the correlations between different variables in the dataset. The heatmap uses a color scale to indicate the strength and direction of the correlations. Positive correlations are shown in shades of green, negative correlations in shades of red, and no or weak correlations in shades of yellow. The numerical values in each cell of the heatmap provide additional information about the strength of the correlations.</textarea>
+        <button id="multivariate-button" class="button" onclick="toggleText('multivariate')">Toggle Text</button>
+    </div>
+
+    <div class="container">
+        <h1>Random Forest: Feature Importance</h1>
+        <img id="feature-importance-img" src="feature_importance.png" alt="Feature Importance">
+        <textarea id="feature-importance-text" class="text-area" readonly>The code provided generates a horizontal bar chart to visualize the feature importances in a random forest model. The feature importances represent the relative importance of each feature in predicting the target variable.
+
+The y-axis of the chart represents the different features, while the x-axis represents the corresponding feature importance values. Each bar in the chart represents a feature, and its length corresponds to its importance value.</textarea>
+        <button id="feature-importance-button" class="button" onclick="toggleText('feature-importance')">Toggle Text</button>
+    </div>
+
+    <script>
+        function toggleText(id) {
+            var textArea = document.getElementById(id + '-text');
+            var button = document.getElementById(id + '-button');
+
+            if (textArea.style.display === 'none') {
+                textArea.style.display = 'block';
+                button.innerHTML = 'Hide Text';
+            } else {
+                textArea.style.display = 'none';
+                button.innerHTML = 'Show Text';
+            }
+        }
+    </script>
+</body>
+</html>

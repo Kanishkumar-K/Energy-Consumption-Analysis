@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Consumption Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1, h2 {
+            color: #333333;
+        }
+        
+        .energy-value {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        
+        .energy-value-wrapper {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 20px;
+        }
+        
+        .energy-value-label {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        .energy-value-animation {
+            animation: valueAnimation 2s;
+        }
+        
+        @keyframes valueAnimation {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const energyValueElement = document.getElementById('energy-value');
+            const energyConsumption = {{ energy_consumption }};
+            const animationDuration = 2000; // Animation duration in milliseconds
+            
+            const animateValue = (start, end, duration) => {
+                const range = end - start;
+                const increment = range / duration * 50; // Adjust interval for smoother animation
+                
+                let value = start;
+                const timer = setInterval(() => {
+                    value += increment;
+                    energyValueElement.textContent = Math.round(value);
+                    
+                    if (value >= end) {
+                        energyValueElement.textContent = end;
+                        clearInterval(timer);
+                    }
+                }, 50);
+            };
+            
+            animateValue(0, energyConsumption, animationDuration);
+        });
+    </script>
+</head>
+<body>
+    <h1>Energy Consumption Analysis Result</h1>
+    
+    <div class="energy-value-wrapper">
+        <span class="energy-value-label">Energy Consumption:</span>
+        <span class="energy-value energy-value-animation" id="energy-value">0</span>
+    </div>
+    <center>
+    <h2>Energy Consumption Analysis Plot</h2>
+    <img src="{{ plot_path }}" alt="Energy Consumption Plot"><br>
+</center>
+
+    <h2>Suggestions for Energy Consumption Reduction</h2>
+    <ul>
+        {% for suggestion in suggestions %}
+        <li>{{ suggestion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
